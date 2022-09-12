@@ -1,0 +1,5 @@
+// Change to your own azure environment
+subscription_id = "4f27b38c-ad3f-43d8-a9a3-01182e5e2f9b"
+client_id       = "f198916c-3e4e-445a-b0c0-15dd256a1247"
+client_secret   = "J-J8Q~cXhsooItgUPNfqLHrcwEhmoCBmMzNUrbuT"
+tenant_id       = "942b80cd-1b14-42a1-8dcf-4b21dece61bb"
