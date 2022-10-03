@@ -1,0 +1,111 @@
+Lab2-ex.1 
+To install Terraform
+1. Enter the following command to get the latest released version of Terraform:
+
+TERRAFORM_VER=`curl -s
+https://api.github.com/repos/hashicorp/terraform/releases/latest | grep tag_
+name | cut -d: -f2 | tr -d \"\,\v | awk '{$1=$1};1'`
+
+2. Enter the following command to download the latest released version of Terraform:
+
+wget https://releases.hashicorp.com/terraform/${TERRAFORM_VER}/terraform_
+${TERRAFORM_VER}_linux_amd64.zip
+
+3. Enter the following commands to extract the file:
+
+sudo yum -y install unzip
+unzip terraform_${TERRAFORM_VER}_linux_amd64.zip
+
+4. Enter the following command to move the binary file to /usr/local/bin/:
+
+sudo mv terraform /usr/local/bin/
+
+5. Enter the following command to verify the Terraform version:
+terraform version
+
+
+
+To clone the Terraform template from GitHub
+1. In a browser, navigate to 
+
+https://github.com/Fortinet-Courseware/NSE7.git.
+
+4. Return to the Linux SSH window, and then paste the URL with the prefix git clone syntax.
+
+git clone https://github.com/Fortinet-Courseware/NSE7.git
+
+5. Enter the following command to navigate to the single directory:
+cd NSE7/terraform/aws-terraform/single
+
+
+Exercise 4
+
+4. Enter the following commands, once at a time, to install Ansible on the staging server 2:
+sudo apt update
+sudo apt upgrade
+sudo apt install software-properties-common
+sudo add-apt-repository --yes --update ppa:ansible/ansible
+sudo apt install ansible
+ansible --version
+
+5. Enter the following command to install pip for Python 3:
+
+sudo apt install python3-pip
+
+
+Enter the following command to download the collection from Galaxy:
+
+ansible-galaxy collection install fortinet.fortios:2.1.7
+
+
+To create a FortiOS configuration file
+1. Go to the site https://galaxy.ansible.com/fortinet/fortios.
+
+
+Exercise 5
+
+To run a playbook
+
+2. Enter the following Ansible playbook command:
+
+ansible-playbook -i hosts fw_global_set.yml
+
+
+Exercise 7
+
+
+To install Terraform
+1. Enter the following command to get the latest released version of Terraform:
+
+TERRAFORM_VER=`curl -s
+https://api.github.com/repos/hashicorp/terraform/releases/latest | grep tag_
+name | cut -d: -f2 | tr -d \"\,\v | awk '{$1=$1};1'`
+
+2. Enter the following command to download the latest released version of Terraform:
+wget https://releases.hashicorp.com/terraform/${TERRAFORM_VER}/terraform_
+${TERRAFORM_VER}_linux_amd64.zip
+
+3. Enter the following command to extract the file:
+
+unzip terraform_1.2.7_linux_amd64.zip
+
+4. Enter the following commands to make a directory called bin, and then move the file to that directory:
+
+mkdir ~/bin
+mv terraform ~/bin
+
+
+Lab 3 Exercise 3
+
+To clone Terraform templates from Github
+1. Use a web browser to navigate to https://github.com/Fortinet-Courseware/NSE7.git.
+
+5. Enter the git clone command and the URL you just copied. For example:
+git clone https://github.com/Fortinet-Courseware/NSE7.git
+
+cd NSE7/terraform/Azure-terraform/ha-port1-mgmt
+
+
+PAYG az vm image terms accept --publisher fortinet --offer
+fortinet_fortigate-vm_v5 --plan fortinet_fg-vm_payg_2022
+
