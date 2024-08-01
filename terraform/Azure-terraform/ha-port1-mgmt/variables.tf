@@ -1,8 +1,8 @@
-// Azure configuration
-variable subscription_id {}
-variable client_id {}
-variable client_secret {}
-variable tenant_id {}
+# // Azure configuration
+# variable subscription_id {}
+# variable client_id {}
+# variable client_secret {}
+# variable tenant_id {}
 
 
 //  For HA, choose instance size that support 4 nics at least
@@ -14,7 +14,7 @@ variable "size" {
 
 variable "location" {
   type    = string
-  default = "westus2"
+  default = "australiaeast"
 }
 
 // To use custom image 
