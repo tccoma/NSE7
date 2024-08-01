@@ -74,7 +74,7 @@ variable "adminpassword" {
 
 variable "location" {
   type    = string
-  default = "westus2"
+  default = "australiaeast"
 }
 
 variable "vnetcidr" {
